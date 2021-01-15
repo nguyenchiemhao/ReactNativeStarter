@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "build",
+    "rootDir": "src",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "allowJs": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "filesGlob": [
+    "typings/index.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "node_modules/typescript/lib/lib.es6.d.ts"
+  ],
+  "types": [
+    "react",
+    "react-dom",
+    "react-native",
+    "react-test-renderer",
+    "jest"
+  ],
+  "exclude": [
+    "build",
+    "coverage",
+    "node_modules",
+    "babel.config.js",
+    ".eslintrc.js",
+    ".prettierrc.js",
+    "metro.config.js",
+    "jest.config.js",
+    "index.js",
+    "src/app/App.tsx"
+  ],
+  "compileOnSave": false
+}
