@@ -9,12 +9,12 @@
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 
-import {IApp} from 'src/interfaces-and-types/IApp';
 import {Provider} from 'react-redux';
 import {configureAppStore} from '../redux/store';
 import Home from '../screens/home/Home';
 
 const store = configureAppStore();
+type IApp = JSX.Element | null;
 
 const App: () => IApp = () => {
   return (
