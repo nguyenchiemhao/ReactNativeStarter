@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './Home';
+import Home from '.';
 import renderer from 'react-test-renderer';
 import {Provider} from 'react-redux';
 import {configureAppStore} from 'src/redux/store';

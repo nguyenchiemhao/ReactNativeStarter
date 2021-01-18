@@ -1,0 +1,33 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+{{#if wantSlice}}
+import {Provider} from 'react-redux';
+import {configureAppStore} from 'src/redux/store';
+{{/if}}
+
+import { {{ properCase ComponentName }} } from '.';
+
+describe('<{{ properCase ComponentName }} />', () => {
+  {{#if wantSlice}}
+  let store: ReturnType<typeof configureAppStore>;
+  
+  beforeEach(() => {
+    store = configureAppStore();
+  });
+  {{/if}}
+  it('should match the snapshot', () => {
+    {{#if wantSlice}}
+      const component = renderer.create(
+        <Provider store={store}>
+          <Home />
+        </Provider>,
+      ).toJSON;
+    {{else}}
+      const component = renderer.create(
+        <Home />,
+      ).toJSON;
+    {{/if}}
+    
+    expect(component).toMatchSnapshot();
+  });
+});

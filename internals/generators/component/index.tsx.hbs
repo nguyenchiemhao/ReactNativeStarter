@@ -1,0 +1,24 @@
+/**
+*
+* {{ properCase ComponentName }}
+*
+*/
+import React from 'react';
+import {View, Text} from 'react-native';
+{{#if wantStyledComponents}}
+import styles from './styles';
+{{/if}}
+
+interface Props {}
+
+export function {{ properCase ComponentName }}(props: Props) {
+
+return (
+<View>
+  <Text>
+    {{properCase ComponentName}}
+  </Text>
+</View>
+);
+
+};

@@ -14,4 +14,4 @@ const homeSlice = createSlice({
   }
 })
 
-export const { actions: homeActions, reducer: homeReducer, name: homeKey } = homeSlice;
+export const { actions: homeActions, reducer, name: sliceKey } = homeSlice;

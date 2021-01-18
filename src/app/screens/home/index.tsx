@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {useInjectReducer, useInjectSaga} from 'redux-injectors';
-import {homeKey, homeReducer} from './slice';
+import {sliceKey, reducer} from './slice';
 import {homeSaga} from './saga';
 import {useDispatch, useSelector} from 'react-redux';
 import {selectTitle} from './selector';
@@ -11,8 +11,8 @@ interface CompProps {
 }
 
 const Home = (props: CompProps) => {
-  useInjectReducer({key: homeKey, reducer: homeReducer});
-  useInjectSaga({key: homeKey, saga: homeSaga});
+  useInjectReducer({key: sliceKey, reducer: reducer});
+  useInjectSaga({key: sliceKey, saga: homeSaga});
 
   const title = useSelector(selectTitle);
 

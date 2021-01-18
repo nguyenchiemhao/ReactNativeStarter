@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "commonjs",
     "outDir": "build",
-    "rootDir": "src",
+    // "rootDir": "src",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,

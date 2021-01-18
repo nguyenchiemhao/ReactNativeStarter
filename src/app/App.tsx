@@ -11,7 +11,7 @@ import {SafeAreaView, StatusBar} from 'react-native';
 
 import {Provider} from 'react-redux';
 import {configureAppStore} from '../redux/store';
-import Home from '../screens/home/Home';
+import Home from './screens/home';
 
 const store = configureAppStore();
 type IApp = JSX.Element | null;
