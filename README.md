@@ -5,6 +5,7 @@
 * Redux Saga
 * Reselect
 * Firebase
+* Firebase realtime database
 
 # Generate
 #### yarn generate or npm generate
