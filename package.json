@@ -23,6 +23,7 @@
     "test:generators": "ts-node --project=./internals/ts-node.tsconfig.json ./internals/testing/test-generators.ts"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^10.5.0",
     "@reduxjs/toolkit": "^1.5.0",
     "chalk": "^4.1.0",
     "cross-env": "^7.0.3",

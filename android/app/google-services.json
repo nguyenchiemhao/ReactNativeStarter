@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "16132123619",
+    "project_id": "urapp-c7275",
+    "storage_bucket": "urapp-c7275.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16132123619:android:325f92361a527b2aae8ed6",
+        "android_client_info": {
+          "package_name": "com.urlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16132123619-dt0tqvmf49vacge3kej015bj1j7dtaqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZXL3Uf6FywPYkU0IQzqyo_DQTEkGlaPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16132123619-dt0tqvmf49vacge3kej015bj1j7dtaqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
