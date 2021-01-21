@@ -1,11 +1,12 @@
 import React from 'react';
-import {View, Text, Touchable, Button} from 'react-native';
+import {View, Text, Button} from 'react-native';
 import {useInjectReducer, useInjectSaga} from 'redux-injectors';
 import {sliceKey, reducer} from './slice';
 import {homeSaga} from './saga';
 import {useDispatch, useSelector} from 'react-redux';
 import {selectTitle} from './selector';
 import database from '@react-native-firebase/database';
+import {useNavigation} from '@react-navigation/native';
 interface CompProps {
   // title: string;
 }
@@ -13,6 +14,7 @@ interface CompProps {
 const Home = (props: CompProps) => {
   useInjectReducer({key: sliceKey, reducer: reducer});
   useInjectSaga({key: sliceKey, saga: homeSaga});
+  const navigation: any = useNavigation();
 
   const title = useSelector(selectTitle);
 
@@ -29,17 +31,8 @@ const Home = (props: CompProps) => {
     <View>
       <Text> {title} </Text>
       <Button
-        onPress={() =>
-          database()
-            .ref('count')
-            .push()
-            .set({
-              name: 'Howie',
-              age: 23,
-            })
-            .then(() => console.log('data has been set'))
-        }
-        title="Press me"
+        title="Go to Details"
+        onPress={() => navigation.push('Details')}
       />
     </View>
   );

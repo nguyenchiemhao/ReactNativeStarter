@@ -31,9 +31,6 @@ import { select{{ properCase ComponentName }} } from './selectors';
 {{#if wantSaga}}
 import { {{ camelCase ComponentName }}Saga } from './saga';
 {{/if}}
-{{#if wantStyledComponents}}
-import styles from './styles';
-{{/if}}
 
 interface Props {}
 
@@ -51,9 +48,7 @@ useInjectSaga({ key: '{{ camelCase ComponentName }}', saga: {{ camelCase Compone
 {{/if}}
 
 {{#if wantSlice}}
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const {{ camelCase ComponentName }} = useSelector(select{{ properCase ComponentName }});
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const dispatch = useDispatch();
 {{/if}}
 

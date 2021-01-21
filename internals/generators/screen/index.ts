@@ -98,14 +98,14 @@ export const screenGenerator: PlopGeneratorConfig = {
       actions.push({
         type: 'modify',
         path: `${rootStatePath}`,
-        pattern: new RegExp(/.*\/\/.*\[IMPORT NEW CONTAINERSTATE ABOVE\].+\n/),
+        pattern: new RegExp(/.*\/\/.*\[IMPORT NEW CONTAINERSTATE ABOVE\].end/),
         templateFile: './screen/importContainerState.hbs',
         abortOnFail: true,
       });
       actions.push({
         type: 'modify',
         path: `${rootStatePath}`,
-        pattern: new RegExp(/.*\/\/.*\[INSERT NEW REDUCER KEY ABOVE\].+\n/),
+        pattern: new RegExp(/.*\/\/.*\[INSERT NEW REDUCER KEY ABOVE\].end/),
         templateFile: './screen/appendRootState.hbs',
         abortOnFail: true,
       });

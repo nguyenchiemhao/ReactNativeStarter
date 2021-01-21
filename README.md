@@ -6,6 +6,7 @@
 * Reselect
 * Firebase
 * Firebase realtime database
+* React navigation
 
 # Generate
 #### yarn generate or npm generate
