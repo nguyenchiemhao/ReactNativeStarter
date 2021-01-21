@@ -8,7 +8,7 @@
 * Firebase realtime database
 * React navigation
 
-# Generate
+## Generate
 #### yarn generate or npm generate
 
 * Component
@@ -18,3 +18,7 @@
 * Screen
 > yarn generate screen `<Screen Name>` or
 > npm generate screen `<Screen Name>`
+
+## Note
+> This time, this project just run well on android. It hasn't been tested on IOs yet.
+> Because, I have no Mac to test it.
